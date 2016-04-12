@@ -33,6 +33,7 @@ static char* bin2tristate(char* bin) {
   char returnValue[50];
   int pos = 0;
   int pos2 = 0;
+  memset( returnValue, 0, 50 );
   while (bin[pos]!='\0' && bin[pos+1]!='\0') {
     if (bin[pos]=='0' && bin[pos+1]=='0') {
       returnValue[pos2] = '0';
